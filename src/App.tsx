@@ -1,25 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Box } from './components/Box';
+import MonthlyMediumWide from './components/widget-medium-wide/monthly';
+import OverviewMediumWide from './components/widget-medium-wide/overview';
+import WeeklyMediumWide from './components/widget-medium-wide/weekly';
+import Daily from './components/widget-small/daily';
+import Overview from './components/widget-small/overview';
+import Recent from './components/widget-small/recent';
+import Weekly from './components/widget-small/weekly';
+import { GlobalStyle } from './global-styles';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+		<>
+			<GlobalStyle />
+			<Box>
+				Medium wide
+				<OverviewMediumWide />
+				<WeeklyMediumWide />
+				<MonthlyMediumWide />
+			</Box>
+			<Box mt={'16px'}>
+				Small
+				<Overview />
+				<Daily />
+				<Recent />
+				<Weekly />
+			</Box>
+		</>
   );
 }
 
