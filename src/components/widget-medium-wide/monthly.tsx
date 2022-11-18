@@ -95,7 +95,6 @@ export default function MonthlyMediumWide() {
 							datasets: [
 								{
 									data: [20, 20, 16, 17, 20, 16, 11],
-									borderColor: 'rgb(255, 99, 132)',
 									backgroundColor: 'hsla(315, 80%, 90%, 1)',
 									borderRadius: Number.MAX_VALUE
 								}
