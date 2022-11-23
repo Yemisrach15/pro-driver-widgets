@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box } from './components/Box';
+import MonthlyLineMediumTall from './components/widget-medium-tall/monthly-line';
 import MonthlyBarMediumTall from './components/widget-medium-tall/montly-bar';
 import OverviewMediumTall from './components/widget-medium-tall/overview';
 import MonthlyMediumWide from './components/widget-medium-wide/monthly';
@@ -19,6 +20,7 @@ function App() {
 				Medium tall
 				<OverviewMediumTall />
 				<MonthlyBarMediumTall />
+				<MonthlyLineMediumTall />
 			</Box>
 			<Box my={16}>
 				Medium wide
