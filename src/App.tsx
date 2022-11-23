@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box } from './components/Box';
+import MonthlyBarMediumTall from './components/widget-medium-tall/montly-bar';
 import OverviewMediumTall from './components/widget-medium-tall/overview';
 import MonthlyMediumWide from './components/widget-medium-wide/monthly';
 import OverviewMediumWide from './components/widget-medium-wide/overview';
@@ -14,17 +15,18 @@ function App() {
   return (
 		<>
 			<GlobalStyle />
-			<Box>
+			<Box my={16}>
 				Medium tall
 				<OverviewMediumTall />
+				<MonthlyBarMediumTall />
 			</Box>
-			<Box>
+			<Box my={16}>
 				Medium wide
 				<OverviewMediumWide />
 				<WeeklyMediumWide />
 				<MonthlyMediumWide />
 			</Box>
-			<Box mt={'16px'}>
+			<Box my={16}>
 				Small
 				<Overview />
 				<Daily />
